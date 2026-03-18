@@ -1,6 +1,7 @@
 import 'package:dapp/services/contracts.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:http/http.dart';
+import 'package:flutter/services.dart';
 
 class Web3Service {
   late Web3Client client;
@@ -10,8 +11,9 @@ class Web3Service {
   }
 
   Future<DeployedContract> loadContract() async {
+    final abiString = await loadAbi();
     return DeployedContract(
-      ContractAbi.fromJson(abi, "MessageStorage"),
+      ContractAbi.fromJson(abiString, "MessageStorage"),
       EthereumAddress.fromHex(contractAddress),
     );
   }
@@ -45,4 +47,8 @@ class Web3Service {
       chainId: 11155111,
     );
   }
+
+  Future<String> loadAbi() async {
+  return await rootBundle.loadString('lib/abi.json');
+}
 }

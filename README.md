@@ -54,8 +54,8 @@ lib/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flutter-dapp.git
-cd flutter-dapp
+git clone https://github.com/BHANJATANMAYA/first_dapp.git
+cd first_dapp
 ```
 
 ### 2️⃣ Install Dependencies
