@@ -1,4 +1,9 @@
-# 🚀 Flutter DApp - Message Storage
+#  Flutter DApp - Message Storage
+![Flutter](https://img.shields.io/badge/Flutter-Mobile_App-blue?logo=flutter)
+![Ethereum](https://img.shields.io/badge/Ethereum-Sepolia_Testnet-black?logo=ethereum)
+![Web3dart](https://img.shields.io/badge/Web3dart-Blockchain-orange)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 A simple decentralized application (DApp) built using Flutter and Ethereum that allows users to store and retrieve messages on the blockchain.
 
